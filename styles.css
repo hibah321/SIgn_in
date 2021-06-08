@@ -72,6 +72,7 @@ p{
     background-color: #f4f4f4;
     padding: 1.5rem;
     border-radius: 10px;
+    position: relative;
 }
 .text {
     width: 96.5%;
@@ -98,6 +99,25 @@ button{
     align-items: center;
     height: 100vh;
 }
+
+/*validation*/
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.input-field{
+    display: flex;
+    margin: 0;
+    position: relative;
+}
+.input-field i{
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    margin: auto 0;
+}
+
+
 @media all and (min-width:700px){
     .container{
         flex-direction: row;
