@@ -1,7 +1,7 @@
 :root{
     --clr-primary: #ff7a7a;
     --clr-head:#5c53a2;
-    --clr-submit:#78e2b4;
+    --clr-submit:hsl(154, 65%, 68%);
     --ff-primary:'Poppins', sans-serif;
 }
 h1,body{
@@ -105,18 +105,34 @@ button{
     display: flex;
     flex-direction: column;
 }
+.form.error input{
+    border-color: var(--clr-primary);
+}
+.form.error i{
+    visibility: visible;
+}
+.form.error small{
+    visibility: visible;
+}
 .input-field{
     display: flex;
     margin: 0;
     position: relative;
 }
 .input-field i{
+    visibility: hidden;
     position: absolute;
     top: 11px;
     right: 15px;
     margin: auto 0;
 }
-
+small{
+    visibility: hidden;
+    margin-top: -15px;
+    padding-left: 10px;
+    font-size: 0.75rem;
+    color: var(--clr-primary);
+}
 
 @media all and (min-width:700px){
     .container{
@@ -142,5 +158,9 @@ button{
 }
 input:focus{
     outline: none;
+}
+button:hover{
+    background-color:hsl(154, 83%, 43%);
+
 }
 
